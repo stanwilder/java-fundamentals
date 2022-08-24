@@ -1,10 +1,11 @@
 package inheritance;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public abstract class Business {
     public String name;
-    public ArrayList <Review> allReviews;
+    public HashSet <Review> allReviews;
     public float stars;
 
     public float getStars() {
@@ -34,15 +35,16 @@ public abstract class Business {
     public int price;
 //    constructor
 
-    public Business(String name, float stars, int price) {
-        this.name = name;
-        this.allReviews = new ArrayList<Review>();
-        this.stars = stars;
-        this.price = price;
-    }
-
-public String toString() {
+public String parentString() {
         return (name + " " + price + " " + stars);
     }
 
+
+    //    Help from Raul
+    public Business(String name, float stars, int price) {
+        this.name = name;
+//        this.allReviews = new HashSet<Review>();
+        this.stars = stars;
+        this.price = price;
+    }
 }

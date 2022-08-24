@@ -6,5 +6,11 @@ public class Theater extends Business{
         super(name, stars, price);
     }
 
+//custom methods
+    public void addMovie(){
 
+    }
+    public void removeMovie(){
+        
+    }
 }

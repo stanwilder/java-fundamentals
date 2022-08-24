@@ -1,5 +1,7 @@
 package inheritance;
 
+import java.util.HashSet;
+
 public class Restaurant extends Business {
 
 
@@ -14,6 +16,9 @@ public class Restaurant extends Business {
     }
 
     public void addReview(Review newReview) {
-
+    if (allReviews == null){
+        allReviews = new HashSet<>();
+    }
+        allReviews.add(newReview);
     }
 }

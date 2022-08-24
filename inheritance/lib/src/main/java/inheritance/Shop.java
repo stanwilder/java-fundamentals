@@ -8,4 +8,9 @@ public class Shop extends Business {
 
     private String description;
 
-}
+    @Override
+    public String toString() {
+        return "{ name: " + name + ", description: " + description + ", price: " + price + ", stars: " + stars;
+    }
+
+    }
