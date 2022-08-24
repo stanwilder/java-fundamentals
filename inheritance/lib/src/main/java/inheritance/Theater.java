@@ -11,6 +11,6 @@ public class Theater extends Business{
 
     }
     public void removeMovie(){
-        
+
     }
 }
